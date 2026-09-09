@@ -1,59 +1,47 @@
-# Minecraft-Servers 🟩
+# 🎮 Minecraft-configs
 
-This repository is used to keep track of all my **Minecraft server configurations** across different versions and setups.  
-It helps me maintain, update, and quickly deploy servers whenever needed.
+A centralized, version-controlled repository to store and manage Minecraft configuration files, data packs, server properties, and plugin settings across multiple game versions and platforms.
+
+---
+
+## 🚀 Project Overview
+
+**Minecraft-configs** provides a structured and reproducible environment for managing Minecraft setups. Whether running a local Java server, a Bedrock realm, or testing version-specific features, this repository ensures:
+
+* **Reproducibility:** Quickly restore or mirror server and client configurations across different environments.
+* **Version Management:** Track setting changes across major Minecraft releases without configuration drift.
+* **Cross-Platform Support:** Keep Java Edition and Bedrock Edition configs cleanly organized in one location.
+* **Streamlined Setup:** Spin up new game instances or test environments with pre-configured settings.
 
 ---
 
 ## 📂 Repository Structure
 
-The repository is organized by **Minecraft versions** and server types:
+The folder hierarchy separates settings by platform (`Java` or `Bedrock`) and game version:
 
+```text
+Minecraft-configs/
+├── Bedrock/
+│   ├── 1.19/
+│   └── 1.20/
+├── Java/
+│   ├── 1.19/
+│   └── 1.20/
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
-Minecraft-Servers
-│
-├── Java-1.19
-│   └── ... (configs, plugins, properties) 
-│
-├── Java-1.20
-│   └── ... (configs, plugins, properties)
-│
-└── ... (future versions / setups)
-```
+---
+
+## 📝 Notes
+
+* **Excluded Files:** Large binary files such as plugin/mod `.jar` files, world saves, and full server logs are explicitly excluded via `.gitignore`. Only lightweight, text-based configuration files (`.yml`, `.json`, `.properties`, `.toml`) are tracked.
+* **Strict Version Mapping:** Each directory strictly matches its respective Minecraft version. Configurations should not be shared across major versions without verifying compatibility.
 
 ---
 
-## 🛠️ Purpose
+## 📄 License
 
-- Keep a **history** of different server setups.  
-- Make it easier to **reproduce environments**.  
-- Store **configs, plugins, and properties** in one place.  
-- Support multiple **Minecraft versions** side by side.  
+This repository is licensed under the [MIT License](LICENSE).
 
----
-
-## 🚀 Usage
-
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/your-username/Minecraft-Servers.git
-   ```
-2. Navigate to the version you want:
-   ```bash
-   cd Minecraft-Servers/Java-1.20/paperMC
-   ```
-3. Use the configs to set up your server.  
-
----
-
-## 📌 Notes
-
-- This repository is meant for **personal server management**.  
-- Plugin jars and large files are not included (unless lightweight).  
-- Each folder corresponds to a **specific server version + type**.  
-
----
-
-## ⚡ License
-
-This repo is for personal use — feel free to **reference** the structure but configs may be specific to my setup.  
+While maintained primarily for personal game configuration and server administration, feel free to fork, reference, or adapt this structure for your own Minecraft deployments.
